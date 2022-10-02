@@ -56,7 +56,7 @@ Java11  ve Maven projesi oluşturulup cucumber BDD framework kullanılarak oluş
 
 <br/>
 
-Java11  ve Maven projesi oluşturulup cucumber BDD framework kullanılarak oluşturulmuştur. 
+Java8  ve Maven projesi oluşturulup cucumber BDD framework kullanılarak oluşturulmuştur. 
 
 <br/>
 
@@ -67,5 +67,31 @@ Java11  ve Maven projesi oluşturulup cucumber BDD framework kullanılarak oluş
 <a href="https://www.intelj.com" target="_blank" rel="noreferrer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQak-N8W03mK25slV1lwM80i0y1obRPPJOaLA&usqp=CAU" alt="intelj" width="80" height="40"/> </a>
 <a href="https://www.maven.com" target="_blank" rel="noreferrer"> <img src="https://koraypeker.com/wp-content/uploads/2018/06/1_xsrKVt69q3JsZzLD-ldekQ.jpeg" alt="maven" width="100" height="40"/> </a>
 
+<br/>
 
+## Appium testinde yapılan üc test <br/>
+
+### A101 uygulaması <br/>
+
+GENYMOTİON uygulası kurularak burda <br/>
+Samsung Galaxy S10 kuruldu<br/>
+özellikler = Android 10(Api29) yüklendi ,   ekran  1440 X 3040  , 560 Dpi <br/>
+A101 uygulamsı telefona sürükleyip bırakıldı kurulduktan sonra test işlemleri başlatıldı.<br/>
+<b>LÜTFEN BU ÖZELLİKLERE SAHİP TELEFONU KURUP TEST YAPINIZ.</b>
+
+<br/>
+
+### Chrome uygulamasından A101 sitesine gidiş (NATİVE_APP) <br/>
+ANDROİD STUDİO kuruldu<br/>
+Pixel 2 API 29 <br/>
+özellikler= Android 10 (Api29) yüklendi, ekran 1080 X 1920 
+bu testimizde ise CHROME uygulamsı yüklendi chrome(105.0.5195.127).exe kullanıldı yeni güncelleme geldiyse driver dosyasında bulunan chromedriver.exe güncellenmesi gerekmektedir.burda oluşturduğumuız driverda <b> context </b> kullanılarak <b>NATİVE_APP</b> geçildi ve uygulama üzerinde <b>AndroidFindBy</b> notasyonu kullanılarak elementlerin locateleri alınmıştır
+
+<br/>
+
+### Chrome ile direk browser bağlanma (CHROMİUM) <br/>
+ANDROİD STUDİO kuruldu<br/>
+Pixel 2 API 29 <br/>
+özellikler= Android 10 (Api29) yüklendi, ekran 1080 X 1920 
+bu testimizde ise CHROME uygulamsı yüklendi chrome(105.0.5195.127).exe kullanıldı yeni güncelleme geldiyse driver dosyasında bulunan chromedriver.exe güncellenmesi gerekmektedir.burda oluşturduğumuız driverda <b> context </b> kullanılarak <b> CHROMİUM </b> geçildi ve uygulama üzerinde <b>FindBy</b> notasyonu kullanılarak elementlerin locateleri alınmıştır. bu sayede burda direk  webden test yapılır gibi <b> Selenium <b/> özellikleri kullanılarak telefondada testler yapıldı
 
