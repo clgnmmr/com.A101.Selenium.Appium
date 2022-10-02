@@ -78,6 +78,11 @@ Samsung Galaxy S10 kuruldu<br/>
 özellikler = Android 10(Api29) yüklendi ,   ekran  1440 X 3040  , 560 Dpi <br/>
 A101 uygulamsı telefona sürükleyip bırakıldı kurulduktan sonra test işlemleri başlatıldı.<br/>
 <b>LÜTFEN BU ÖZELLİKLERE SAHİP TELEFONU KURUP TEST YAPINIZ.</b>
+<br/>
+
+![Screenshot_11](https://user-images.githubusercontent.com/101714396/193453938-0b47e3db-66fb-4b47-a868-7014f91fc477.jpg)
+![Screenshot_12](https://user-images.githubusercontent.com/101714396/193454042-81b9d8df-b639-47cc-8493-3e085344d838.jpg)
+
 
 <br/>
 
@@ -94,4 +99,8 @@ ANDROİD STUDİO kuruldu<br/>
 Pixel 2 API 29 <br/>
 özellikler= Android 10 (Api29) yüklendi, ekran 1080 X 1920 
 bu testimizde ise CHROME uygulamsı yüklendi chrome(105.0.5195.127).exe kullanıldı yeni güncelleme geldiyse driver dosyasında bulunan chromedriver.exe güncellenmesi gerekmektedir.burda oluşturduğumuız driverda <b> context </b> kullanılarak <b> CHROMİUM </b> geçildi ve uygulama üzerinde <b>FindBy</b> notasyonu kullanılarak elementlerin locateleri alınmıştır. bu sayede burda direk  webden test yapılır gibi <b> Selenium <b/> özellikleri kullanılarak telefondada testler yapıldı
+ <b>LÜTFEN BU ÖZELLİKLERE SAHİP TELEFONU KURUP TEST YAPINIZ.</b>
+<br/>
+![Screenshot_13](https://user-images.githubusercontent.com/101714396/193454329-4e6dcdf8-67a8-4278-8144-5d4a2920323e.jpg)
 
+![Screenshot_14](https://user-images.githubusercontent.com/101714396/193454341-0f9a51ae-9a8f-425b-ab94-3eff2409916e.jpg)
