@@ -19,8 +19,8 @@ runner clasımızda kullandığımız notasyonlar sayesinde burda çalıştırab
 burda ise tüm kodlarımızın çalışmasını sağlayan methodlarımızın bulunduğu classlarımız vardır.Locatelerimizi , driverımız buraya çağırarak yapmak istediğimiz adımların kodlarını burda yazıyoruz
  
 ### Utilities dosyası <br/>
-yardımcı clasımız bu dosyamızda bize sürekli lazım olan classlrımız ve methodalrımız bulunmaktadır içerisinde  projemizi daha anlaşılır hale getirecek classlarımız ve methodalrımız vardır bunlar
-<b> Driver.class </b> , <b> ConfigReader.class</b> , <b> ReusableMehod.class </b> vb. claslarımız vardır 
+yardımcı classımız bu dosyamızda bize sürekli lazım olan classlarımız ve methodlarımız bulunmaktadır. İçerisinde  projemizi daha anlaşılır hale getirecek classlarımız ve methodalrımız vardır bunlar
+<b> Driver.class </b> , <b> ConfigReader.class</b> , <b> ReusableMehod.class </b> vb.  dosyalarımız bulunmaktadır. 
 
 ### resources dosyası <br/>
 <b> feature </b> dosyalarımızın bulunduğu dosyamızdır burda <b>BDD</b> (behavior Driven Development) kullanılarak ve <b> Gherking </b> dili kullanılarak featuremiz oluşturuluyor.oluşturduğumuz adımları direk 
