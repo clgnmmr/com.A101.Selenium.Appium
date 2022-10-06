@@ -41,8 +41,10 @@ public class DriverChrome {
             if (ConfigReader.getProperty("platformName").equals("Android")) {
                 //if you do not provide app path so you should provide "appPackage" and "appActivity"
                 if (ConfigReader.getProperty("browserName").equals("chrome")) {
+                   // desiredCapabilities.setCapability("appPackage","org.chromium.webview_shell");
                     desiredCapabilities.setCapability("appPackage","com.android.chrome");
                     desiredCapabilities.setCapability("appActivity","com.google.android.apps.chrome.Main");
+                   // desiredCapabilities.setCapability("appActivity","org.chromium.webview_shell.WebViewBrowserActivity");
                     assert appiumServerURL != null;
                     chromeDriver = new AndroidDriver(appiumServerURL,desiredCapabilities);
                 } else if (ConfigReader.getProperty("browserName").equals("firefox")) {

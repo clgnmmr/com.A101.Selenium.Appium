@@ -1,98 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="340.963">
-<testcase classname="FirstCase kullanici aldigi urune ozellik secmeli ve odeme yapabilmeli" name="TestCase kullanici odeme yapabilir" time="340.522">
-<failure message="Can't locate an element by this strategy: By.chained({By.xpath: //android.view.View[contains(@content-desc,'ÜYE OLMADAN DEVAM ET')]})" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given kullanici chrome ile "A101Url" sayfasına gider........................passed
-And kullanici chrome ile "Menü" tiklar......................................passed
-And kullanici chrome ile "AKSESUAR" > "Kadın İç" > "Dizaltı"  bolumunu acar.passed
-Then kullanici chrome ile "SİYAH" oldugunu dogrular.........................passed
-When kullanici chrome ile Sepete ekler......................................passed
-And kullanici chrome ile SEPETI GORUNTULE butonuna tiklar...................passed
-And kullanici chrome ile Sepet Onaylar......................................passed
-When kullanici chrome ile UYE OLMADAN DEVAM ET butonuna tiklar..............failed
-And kullanici chrome ile mail girer.........................................skipped
-And kullanici chrome ile DEVAM ET butonuna tiklar...........................skipped
-And kullanici chrome ile yeni adress ekler ve kaydet Devam et butonuna Basar.skipped
-Then kullanici chrome ile  odeme sayfasında oldugunu dogrular...............skipped
-And kullanici chrome ile uygulamayı kapatir.................................skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="114.083">
+<testcase classname="FirstCase kullanici aldigi urune ozellik secmeli ve odeme yapabilmeli" name="TestCase kullanici odeme yapabilir" time="113.722">
+<failure message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CILGINMIMAR', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {app: E:\proje a101\A101.Appium.T..., appActivity: org.studionord.a101.MainAct..., appPackage: org.studionord.a101, autoAcceptAlert: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: E:\proje a101\A101.Appium.T..., appActivity: org.studionord.a101.MainAct..., appPackage: org.studionord.a101, autoAcceptAlert: true, automationName: UiAutomator2, deviceName: 115e7bab, newCommandTimeout: 60000, noReset: true, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: Xiaomi, deviceModel: M2101K6G, deviceName: 115e7bab, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: 115e7bab, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60000, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 93, takesScreenshot: true, viewportRect: {height: 2084, left: 0, top: 93, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: 119151a2-da31-444b-b3f9-52257c4c9d69&#10;*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text(&quot;ÜYE OLMADAN DEVAM ET&quot;))}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Appium ile uygulama acilir............................................passed
+And kullanici menu acar.....................................................passed
+And kullanici "GİYİM & AKSESUAR" > "Kadın İç Giyim" > "Dizaltı Çorap"  bolumunu acar.passed
+Then kullanici "SİYAH" oldugunu dogrular....................................passed
+When kullanici Sepete ekler.................................................passed
+And kullanici "SEPETE GİT" butonuna tiklar..................................passed
+And kullanici Sepet Onaylar.................................................passed
+When kullanici "ÜYE OLMADAN DEVAM ET" butonuna tiklar.......................failed
+And kullanici mail girer....................................................skipped
+And kullanici "GÖNDER" butonuna tiklar......................................skipped
+And kullanici yeni adress ekler ve kaydet Devam et butonuna Basar...........skipped
+Then kullanici odeme sayfasında oldugunu dogrular...........................skipped
+And kullanici uygulamayı kapatir............................................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.view.View[contains(@content-desc,'ÜYE OLMADAN DEVAM ET')]})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
-	at stepDefinitions.FirstCaseChromeApp.kullaniciChromeIleUYEOLMADANDEVAMETButonunaTiklar(FirstCaseChromeApp.java:141)
-	at ✽.kullanici chrome ile UYE OLMADAN DEVAM ET butonuna tiklar(file:///E:/proje%20a101/A101.Appium.Test/src/test/resources/features/FirstCaseChromeApp.feature:12)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@17baaf07 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
-	at stepDefinitions.FirstCaseChromeApp.kullaniciChromeIleUYEOLMADANDEVAMETButonunaTiklar(FirstCaseChromeApp.java:141)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.view.View[contains(@content-desc,'ÜYE OLMADAN DEVAM ET')]})
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'CILGINMIMAR', ip: '192.168.109.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: E:\proje a101\A101.Appium.T..., appActivity: org.studionord.a101.MainAct..., appPackage: org.studionord.a101, autoAcceptAlert: true, automationName: UiAutomator2, databaseEnabled: false, desired: {app: E:\proje a101\A101.Appium.T..., appActivity: org.studionord.a101.MainAct..., appPackage: org.studionord.a101, autoAcceptAlert: true, automationName: UiAutomator2, deviceName: 115e7bab, newCommandTimeout: 60000, noReset: true, platformName: android, platformVersion: 12}, deviceApiLevel: 31, deviceManufacturer: Xiaomi, deviceModel: M2101K6G, deviceName: 115e7bab, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: 115e7bab, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60000, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 12, statBarHeight: 93, takesScreenshot: true, viewportRect: {height: 2084, left: 0, top: 93, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 119151a2-da31-444b-b3f9-52257c4c9d69
+*** Element info: {Using=-android uiautomator, value=new UiScrollable(new UiSelector()).scrollIntoView(text("ÜYE OLMADAN DEVAM ET"))}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 48 more
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at utils.ReusableMethods.scrollWithUiScrollableClick(ReusableMethods.java:135)
+	at stepDefinitions.FirstCaseA101App.kullaniciButonunaTiklar(FirstCaseA101App.java:79)
+	at ✽.kullanici "ÜYE OLMADAN DEVAM ET" butonuna tiklar(file:///E:/proje%20a101/A101.Appium.Test/src/test/resources/features/FirstCaseA101App.feature:12)
 ]]></failure>
 </testcase>
 </testsuite>

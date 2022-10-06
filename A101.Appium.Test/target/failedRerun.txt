@@ -1,1 +1,1 @@
-file:src/test/resources/features/FirstCaseChromeApp.feature:4
+file:src/test/resources/features/FirstCaseA101App.feature:4

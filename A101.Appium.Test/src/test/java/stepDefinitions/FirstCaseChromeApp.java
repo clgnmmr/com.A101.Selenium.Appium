@@ -7,6 +7,7 @@ import io.appium.java_client.touch.offset.PointOption;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import screens.A101Chrome;
 import utils.ConfigReader;
 import utils.DriverChrome;
@@ -53,7 +54,7 @@ public class FirstCaseChromeApp {
            if (a101Chrome.cerez.isDisplayed()) {
                a101Chrome.cerez.click();
            }
-       }catch (Exception e){
+       }catch (NoSuchElementException e){
            e.printStackTrace();
        }
         waitJava(5);
